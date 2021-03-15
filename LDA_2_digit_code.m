@@ -89,19 +89,7 @@ feature = 154;
 [U,S,V,threshold,w,sortOne,sortTwo] = dc_trainer(one_matrix,two_matrix,feature);
 
 
-figure(1)
-subplot(1,2,1)
-histogram(sortOne,100); hold on, plot([threshold threshold], [0 10],'r')
-set(gca,'Fontsize',14)
-title('One Images')
-subplot(1,2,2)
-histogram(sortTwo,100); hold on, plot([threshold threshold], [0 10],'r')
-set(gca,'Fontsize',14)
-title('Two Images')
-
-
-
-%% 
+%% Using LDA Classifier
 
 filterData = [];
 filterLabel = [];
